@@ -22,4 +22,3 @@ theme: minima
 # 排除文件（不需要处理的文件）
 exclude:
   - README.md
-  - .gitignore
