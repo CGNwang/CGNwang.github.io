@@ -1,0 +1,25 @@
+# 网站基本信息
+title: "你的博客名称"
+description: "这里写博客描述"
+baseurl: ""  # 如果你的网站在子目录，填写子目录路径
+url: "https://你的用户名.github.io"  # 你的网站完整URL
+
+# 作者信息
+author:
+  name: "你的名字"
+  email: "你的邮箱"
+  github: "你的GitHub用户名"
+
+# 构建设置
+markdown: kramdown  # Markdown解析器
+permalink: /:year/:month/:day/:title/  # 文章URL格式
+plugins:
+  - jekyll-feed  # RSS订阅插件（GitHub Pages支持）
+
+# 主题设置（使用GitHub Pages支持的默认主题）
+theme: minima
+
+# 排除文件（不需要处理的文件）
+exclude:
+  - README.md
+  - .gitignore
