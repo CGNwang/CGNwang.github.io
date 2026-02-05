@@ -1,24 +1,42 @@
 # 网站基本信息
-title: "请输入文本（说实话真没想好网站要叫啥）"
+title: "思维的阁楼"  # ⬅️ 给个建议名字，你可以改
 description: "虽世殊事异，所以兴怀，其致一也。后之览者，亦将有感于斯文。"
-baseurl: ""  # 如果你的网站在子目录，填写子目录路径
-url: "https://CGNwang.github.io"  # 你的网站完整URL
+baseurl: ""
+url: "https://CGNwang.github.io"
+lang: zh-CN
+timezone: Asia/Shanghai
 
 # 作者信息
-author: 
+author:
   name: "王思维"
   email: "cgn.wang@gmail.com"
   github: "CGNwang"
 
 # 构建设置
-markdown: kramdown  # Markdown解析器
-permalink: /:year/:month/:day/:title/  # 文章URL格式
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
 plugins:
-  - jekyll-feed  # RSS订阅插件（GitHub Pages支持）
+  - jekyll-feed
 
-# 主题设置（使用GitHub Pages支持的默认主题）
+# 主题设置
 theme: minima
+minima:
+  skin: auto
+  date_format: "%Y年%m月%d日"
+  
+# 社交媒体
+social_links:
+  - platform: github
+    user_url: "https://github.com/CGNwang"
+  - platform: email
+    user_url: "mailto:cgn.wang@gmail.com"
 
-# 排除文件（不需要处理的文件）
+# 排除文件
 exclude:
   - README.md
+
+# 集合设置（方便以后扩展）
+collections:
+  drafts:
+    output: false
+    permalink: /drafts/:path/
